@@ -1,0 +1,7 @@
+.env/
+*/.env/
+*/.env/*
+django/staticfiles/
+django/venv/
+*/django/staticfiles/
+*/*django/staticfiles/
