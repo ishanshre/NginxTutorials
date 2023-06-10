@@ -5,3 +5,11 @@ django/staticfiles/
 django/venv/
 */django/staticfiles/
 */*django/staticfiles/
+
+
+*/node_modules
+*/*/node_modules
+*/*/*/node_modules
+*/node_module
+*/*/node_module
+*/*/*/node_module
