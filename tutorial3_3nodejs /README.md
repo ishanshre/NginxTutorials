@@ -11,8 +11,8 @@
         - docker run --hostname nodeapp2 --name nodeapp2 -d nodeapp
         - docker run --hostname nodeapp3 --name nodeapp3 -d nodeapp
       - spin up docker container
-        - docker run --name nginx --hostname ng1 -p 8080:8080 -v NGINX.CONF_path:/etc/share/nginx nginx
-        - docker run --name nginx --hostname ng1 -p 8080:8080 -v /user/app/nginx.conf:/etc/share/nginx nginx
+        - docker run --name nginx --hostname ng1 -p 8080:8080 -v NGINX.CONF_path:/etc/nginx nginx
+        - docker run --name nginx --hostname ng1 -p 8080:8080 -v /user/app/nginx.conf:/etc/nginx/nginx.conf nginx
       - Create a network using docker
         - docker network create <network name>
         - docker network create backendnodenet

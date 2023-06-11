@@ -1,0 +1,12 @@
+# Process
+    - create a golang app
+    - create Dockerfile for golang app
+    - create nginx config
+    - docker commands
+      - build docker image of golang app
+        - docker build . -t go_app
+        - docker run --hostname goapp1 --name goapp1 -d go_app
+        - docker run --hostname goapp2 --name goapp2 -d go_app
+        - docker run --hostname goapp3 --name goapp3 -d go_app
+      - run nginx container as a reverse proxy by mapping currently made nginx config or create nginx image for this golang app
+        - docker run --name nginx1 --hostname ng1 -p 8000:8080 -v /home/ishan/projects/NginxTutorials/tutorial4_3golang/nginx.conf:/etc/nginx/nginx.conf nginx 
